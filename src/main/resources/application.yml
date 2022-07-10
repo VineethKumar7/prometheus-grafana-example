@@ -1,5 +1,7 @@
 management:
   endpoints:
+    health:
+      show-details: "always"
     web:
       exposure:
-        include: "prometheus,health,info,metrics"
+        include: "*"
